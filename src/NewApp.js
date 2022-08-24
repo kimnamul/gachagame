@@ -4,12 +4,13 @@ import './NewApp.css';
 function NewApp() {
     const [gold, setGold] = useState(0);
     const [maxgold, setMaxGold] = useState(1000);
+    const debug_earn_rate = 100;
     
     const [gem, setGem] = useState(0);
     const [maxgem, setMaxGem] = useState(99999);
     
     const EarnGold = (amount) => {
-        setGold(Math.min(gold + amount * 100, maxgold));
+        setGold(Math.min(gold + amount * debug_earn_rate, maxgold));
     }
     const PayGold = (amount) => {
         if(gold < amount) {
