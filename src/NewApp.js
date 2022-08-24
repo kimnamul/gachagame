@@ -34,7 +34,7 @@ function NewApp() {
 
             <main>
                 this is main
-                <div>
+                <div className="clicker">
                     Here to be Clicker!
                     <br></br>
                     <button className="gold_earn_button" onClick={() => EarnGold(1)}>
