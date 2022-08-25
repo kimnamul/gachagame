@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import './NewApp.css';
+import { useState } from 'react';
+import Gacha from './gacha.js';
 
 function NewApp() {
     // 보유 재화
